@@ -16,6 +16,9 @@ public class Exercise1 {
             System.out.println("The result is: " + result);
         } catch (ArithmeticException e) {
             System.err.println("Cannot divide by zero: " + e.getMessage());
+        } finally {
+            System.out.println("Program finished.");
+            input.close();
         }
     }
 }
